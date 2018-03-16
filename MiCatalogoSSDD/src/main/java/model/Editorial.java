@@ -7,7 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 @Entity
@@ -25,7 +24,7 @@ public class Editorial {
 	
 	public Editorial() {}
 	
-	public Editorial(String nombre, String email, long telefono, long cPostal, long nif) {
+	public Editorial(String nombre,  long telefono, String email, long cPostal, long nif) {
 		this.nombre = nombre;
 		this.email = email;
 		this.telefono = telefono;

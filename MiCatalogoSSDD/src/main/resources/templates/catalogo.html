@@ -1,0 +1,12 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Mi catálogo</title>
+</head>
+
+<body>
+	<h1>Catálogo Manzaneque</h1>
+	<p th:each = "editorial : ${editoriales}">
+		<a th:text="${editorial.nombre}"></a>
+	</p>
+</body>
+</html>
